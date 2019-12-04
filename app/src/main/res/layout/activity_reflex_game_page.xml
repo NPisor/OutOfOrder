@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reflexGamePage"
+    android:background="@drawable/reflexbg" >
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card1Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card1Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        android:layout_toRightOf="@id/card1"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card2Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card2Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card2">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card3Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card3Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card3">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card4Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card4Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_below="@id/card2"
+        android:layout_toRightOf="@id/card1">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card5Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card5Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card5"
+        android:layout_below="@id/card3">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card6Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card6Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toLeftOf="@id/card5"
+        android:layout_below="@id/card5">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card7Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card7Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card7"
+        android:layout_below="@id/card5">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card8Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card8Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card8"
+        android:layout_below="@id/card6">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card9Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card9Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipOnTouch="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_toRightOf="@id/card9"
+        android:layout_below="@id/card6">
+
+        // ImageViews used to create matching tiles, as used by EasyFlipView
+
+        <ImageView
+            android:id="@+id/card10Front"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/holefilled" />
+
+        <ImageView
+            android:id="@+id/card10Back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:src="@drawable/holeempty" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="197dp"
+        app:srcCompat="@drawable/reflexfence" />
+
+    <ImageButton
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:background="@null"
+        app:srcCompat="@drawable/reflexstart" />
+</RelativeLayout>

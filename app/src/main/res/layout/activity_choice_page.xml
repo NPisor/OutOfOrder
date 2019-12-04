@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoicePage"
+    android:background="@drawable/choicepage">
+
+    <ImageButton
+        android:id="@+id/timeattackbutton"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/startbutton" />
+
+    <ImageButton
+        android:id="@+id/memorybutton"
+        android:layout_width="296dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FCFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeattackbutton"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/startbutton" />
+
+    <ImageView
+        android:id="@+id/timeattacktext"
+        android:layout_width="336dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeattackbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/timeattacktext" />
+
+    <ImageView
+        android:id="@+id/memorymadnesstext"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/memorybutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeattackbutton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/memorymadnesstext" />
+
+    <Button
+        android:id="@+id/logscores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="Log Scores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memorybutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
